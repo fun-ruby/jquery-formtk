@@ -142,6 +142,41 @@
     }
 
     /**
+     *  API: .formtk("select_list", {})
+     *    Populate SELECT tag (this) with given options.data entries
+     *
+     *    Default options:
+     *      append: false
+     *      data: []
+     *      option_name: 'name'
+     *      option_value: 'id'
+     *
+     *    Return this
+     */
+    if (action === "select_list") {
+      var params = $.extend({
+        append: false,
+        data: [],
+        option_name: 'name',
+        option_value: 'id'
+      }, options);
+
+      var select = this;
+
+      if (!params.append) {
+        select.empty();
+      }
+
+      $.each(params.data, function() {
+        select.append(
+          new Option(this[params.option_name], this[params.option_value])
+        );
+      });
+
+      return select;
+    }
+
+    /**
      * Action is unsupported. Throw error.
      */
     $.error("Undefined .formtk() action: " + action);
