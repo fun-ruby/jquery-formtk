@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FormTk Test Suite</title>
+  <link rel="stylesheet" href="../vendor/qunit-1.12.0.css" media="all"/>
+  <!-- jQuery -->
+  <script src="../vendor/jquery-1.10.1.min.js"></script>
+  <script src="../vendor/qunit-1.12.0.js"></script>
+  <script src="../src/jquery-formtk.js"></script>
+  <script src="unit/formtk.js"></script>
+
+</head>
+<body>
+  <div>
+    <h1 id="qunit-header">FormTk Test Suite</h1>
+    <h2 id="qunit-banner"></h2>
+    <h2 id="qunit-userAgent"></h2>
+    <ol id="qunit-tests"></ol>
+    <div id="qunit-fixture"></div>
+  </div>
+
+<div style="display: none">
+  <h2>Test Form</h2>
+  <form id="surveyform">
+    <p>What is your name?<br />
+      <input id="firstName" type="text" name="name" /><br />
+      <input id="lastName" type="text" name="name" />
+      <input id="codeName" type="hidden" name="name" />
+    </p>
+
+    <p>What is your gender?</br />
+      <label><input id="genderM" type="radio" name="sex" value="male">Male</label><br>
+      <label><input id="genderF" type="radio" name="sex" value="female">Female</label>
+    </p>
+
+    <p>What gadget(s) do you carry?<br />
+    <label><input id="gadCell" type="checkbox" name="gadgets" value="Cellphone" />a cell phone</label><br>
+    <label><input id="gadLapt" type="checkbox" name="gadgets" value="Laptop" />a laptop</label><br>
+    <label><input id="gadBeep" type="checkbox" name="gadgets" value="Beeper" />a beeper</label><br>
+    <label><input id="gadMp3" type="checkbox" name="gadgets" value="Mp3player" />a mp3 player</label>
+    </p>
+
+    <p>What do you drink while programming?<br />
+    <select id="favbev" name="favbev" multiple>
+    </select>
+    </p>
+
+    <p>How can this survey be improved?<br />
+    <textarea id="feedbak" name="comment"></textarea>
+    </p>
+
+  </form>
+</div>
+
+</body>
+</html>
+
