@@ -8,7 +8,7 @@ A jQuery plugin providing several easy to use methods for working with Form data
 
 ### Download
 
-  * [jquery-formtk-0.8.0.min.js](tree/master/dist/jquery-formtk-0.8.0.min.js)
+  * [jquery-formtk-0.8.0.min.js](dist/jquery-formtk-0.8.0.min.js)
 
 ### Setup
 
@@ -66,7 +66,7 @@ Use to obtain a data Object from Form field entries. For example,
   // do something with data
 ```
 
-Consult the [wiki](wiki) pages for more detailed API documentation and examples.
+Consult the [wiki](https://github.com/fun-ruby/jquery-formtk/wiki) pages for more detailed API documentation and examples.
 
 
 ## License
