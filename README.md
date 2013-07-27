@@ -2,9 +2,9 @@
 
 A jQuery plugin providing several easy to use methods for working with Form data. The toolkit handles the transfer of data **to** and **from** a Form, so you can concentrate on more important tasks.
 
-### Requirements
+### jQuery Version Compatibility
 
-  * jQuery 1.10 and higher
+  * Unit tests all passed on all jQuery releases (upto 2.0.3 as of writing)
 
 ### Download
 
