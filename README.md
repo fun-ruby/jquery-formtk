@@ -8,13 +8,13 @@ A jQuery plugin providing several easy to use methods for working with Form data
 
 ### Download
 
-  * [jquery-formtk-0.8.0.min.js](dist/jquery-formtk-0.8.0.min.js)
+  * [jquery-formtk-0.8.1.min.js](dist/jquery-formtk-0.8.1.min.js)
 
 ### Setup
 
 ```html
   <script src="jquery.js"></script>
-  <script src="jquery-formtk-0.8.0.min.js"></script>
+  <script src="jquery-formtk-0.8.1.min.js"></script>
 ```
 
 ### Usage Summary

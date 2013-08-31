@@ -169,3 +169,29 @@ test("test serialize",
     $("#surveyform").formtk("deserialize", {data: {}});
   });
 
+test("test include_blank select_list",
+  function() {
+
+    $("#favbev").formtk("select_list", {
+       data: [
+        {name:'Beer', id:1},
+        {name:'Coffee', id:2}
+       ],
+       option_name: 'name',
+       option_value: 'id',
+       append: false,
+       include_blank: true
+    });
+    a = $("#favbev").children();
+    equal(3, a.length, "Passed!");
+
+    $("#favbev").val("");
+    a = $("#favbev").val();
+    equal(1, a.length, "Passed!");
+    equal("", a[0], "Passed!");
+
+    $("#favbev").formtk("select_list", {
+       data: []
+    });
+
+  });

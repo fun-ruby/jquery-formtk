@@ -1,0 +1,8 @@
+
+2013-08-31 - jquery-formtk-0.8.1
+================================
+
+  * Add include_blank option to select_list API
+  * Update unit tests
+  * Up version to 0.8.1
+
